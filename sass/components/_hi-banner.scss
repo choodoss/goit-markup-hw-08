@@ -1,0 +1,35 @@
+.hi-banner {
+    padding: 200px 0;
+    margin: 0 auto;
+    max-width: 1600px;
+
+    background-color: $dark-background;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/hi-banner__bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hi-banner__title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    text-align: center;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.hi-banner__button {
+    @extend .button;
+    padding: 10px 32px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}

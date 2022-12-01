@@ -1,0 +1,29 @@
+.brands-list {
+    display: flex;
+    gap: var(--primary-gap);
+}
+
+.brands-list__item {
+    @include basis (5, 6);
+}
+
+.brands-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    height: 92px;
+    transition: $transition-color, $transition_border-color;
+
+    &:hover,
+    &:focus {
+        color: $primary-color-hover;
+        border-color: $primary-color-hover;
+    }
+}
+
+.brands-list__logo {
+    fill: currentColor;
+}

@@ -1,0 +1,7 @@
+@mixin transition($type) {
+    transition: $type 250ms cubic - bezier(0.4, 0, 0.2, 1)
+}
+
+@mixin basis($line, $column) {
+    flex-basis: calc((100% - ($line*var(--primary-gap))) / $column);
+}

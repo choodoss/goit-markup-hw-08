@@ -1,0 +1,33 @@
+.features__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--primary-gap);
+}
+
+.features__body {
+    flex-basis: calc((100% - (3*var(--primary-gap))) / 4);
+}
+
+.features__bgc-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.features__title {
+    margin: 0 0 10px 0;
+
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-title-color;
+}
+
+.features__text {
+    line-height: 1.71;
+}

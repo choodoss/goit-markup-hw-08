@@ -1,0 +1,56 @@
+*:focus {
+    outline: 2px solid #2196F3;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: $primary-link-color;
+}
+
+button {
+    cursor: pointer;
+    border: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $primary-text-color;
+    background: #FFFFFF;
+}
+
+button,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+a {
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
