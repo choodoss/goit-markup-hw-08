@@ -3,14 +3,25 @@
     padding: 60px 0;
 
     .my-logo {
-        margin-right: 0;
         margin-bottom: 20px;
     }
 }
 
 .footer__row {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1170px) {
+        gap: 0px;
+    }
 }
 
 .my-logo--white {
@@ -22,7 +33,11 @@
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and(min-width: 1170px) {
+        margin-bottom: 9px;
+    }
 }
 
 .address__item {
@@ -55,22 +70,33 @@
 }
 
 .address__column {
-    margin-right: 70px;
+    text-align: center;
+
+    @media screen and (min-width:1170px) {
+        margin-right: 70px;
+        text-align: left;
+    }
 }
 
 //2 колонка
 
 .social__column {
-    margin-right: auto;
+    @media screen and (min-width: 1170px) {
+        margin-right: auto;
+    }
 }
 
 .social__column-text {
     margin-bottom: 20px;
-
+    text-align: center;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (min-width: 1170px) {
+        text-align: left;
+    }
 }
 
 
@@ -102,25 +128,37 @@
     margin-bottom: 20px;
 
     font-weight: 700;
+    text-align: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (min-width: 1170px) {
+        text-align: left;
+    }
 }
 
 .mail-push__row {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 1170px) {
+        gap: 12px;
+        flex-direction: row;
+    }
 }
 
 .mail-push__input {
     padding: 15px 16px;
-    margin-right: 12px;
 
     height: 50px;
-    min-width: 358px;
 
+    min-width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -131,6 +169,14 @@
     &:focus {
         border: 1px solid $primary-color-hover;
         outline: none;
+    }
+
+    @media screen and (min-width: 1170px) {
+        min-width: 358px;
+    }
+
+    @media screen and (max-width: 479px) {
+        min-width: 290px;
     }
 }
 

@@ -1,18 +1,18 @@
-.phone {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: $transition-color;
+// .phone {
+//     display: flex;
+//     align-items: center;
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     transition: $transition-color;
 
-    &:focus,
-    &:hover {
-        color: $primary-color-hover;
-    }
-}
+//     &:focus,
+//     &:hover {
+//         color: $primary-color-hover;
+//     }
+// }
 
-.phone__icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
+// .phone__icon {
+//     margin-right: 10px;
+//     fill: currentColor;
+// }

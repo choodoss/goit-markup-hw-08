@@ -1,15 +1,9 @@
 .work-img {
     padding-top: 0;
-}
-
-.title {
-    margin-bottom: 50px;
-
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    color: $primary-title-color;
+    display: none;
+    @media screen and (min-width: 1170px){
+        display: block;
+    }
 }
 
 .work-img-list__row {

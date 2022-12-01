@@ -1,10 +1,19 @@
 .brands-list {
     display: flex;
     gap: var(--primary-gap);
+    flex-wrap: wrap;
 }
 
 .brands-list__item {
-    @include basis (5, 6);
+    @include basis (1, 2);
+
+    @media screen and (min-width: 768px) {
+        @include basis (2, 3);
+    }
+
+    @media screen and (min-width: 1170px) {
+        @include basis (5, 6);
+    }
 }
 
 .brands-list__link {
