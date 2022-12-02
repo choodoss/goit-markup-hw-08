@@ -2,23 +2,41 @@
     display: flex;
     align-items: center;
     height: 60px;
-& .my-logo {
-    margin-right: auto;
-    @media screen and (min-width: 678px) {
-        margin-right: 88px;
-    }
-    @media screen and (min-width: 1170px) {
-        margin-right: 92px;
+
+    & .my-logo {
+        margin-right: auto;
+
+        @media screen and (min-width: 678px) {
+            margin-right: 88px;
+        }
+
+        @media screen and (min-width: 1170px) {
+            margin-right: 92px;
+        }
     }
 }
+
+.header-nav__button {
+    .icon-close {
+        display: none;
+    }
+
+    &.is-open {
+        .icon-close {
+            display: block;
+        }
+        .icon-menu {
+            display: none;
+        }
+    }
 }
+
 .main-nav__list {
     display: none;
-    
 }
-.header-nav__icon {
 
-}
+.icon-close {}
+
 // .main-nav__list {
 //     display: flex;
 //     gap: 50px;

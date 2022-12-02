@@ -8,6 +8,7 @@
     overflow-y: auto;
     transform: scaleX(1);
     background-color: rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
 
     transition: $transition-opacity, $transition-transform;
 }
