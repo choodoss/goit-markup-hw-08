@@ -1,11 +1,18 @@
-// .contacts-list {
-//     display: flex;
-//     gap: 50px;
-// }
-
-// @import './email';
-// @import './phone';
 .contacts-list {
     display: none;
-    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    @media screen and (min-width: 1170px) {
+        flex-direction: row;
+        gap: 30px;
+    }
 }
+
+@import './email';
+@import './phone';
