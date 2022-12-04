@@ -1,21 +1,40 @@
 .phone {
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
+    font-weight: 500;
     letter-spacing: 0.02em;
+    
     transition: $transition-color;
 
     &:focus,
     &:hover {
         color: $primary-color-hover;
     }
+
+    @media screen and (min-width: 327px) {
+        font-size: 34px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 .phone__icon {
-    margin-right: 8px;
-    fill: currentColor;
-    @media screen and (min-width: 1140px) {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-right: 8px;
+        fill: currentColor;
+    }
+
+    @media screen and (min-width: 1170px) {
         margin-right: 10px;
     }
 }

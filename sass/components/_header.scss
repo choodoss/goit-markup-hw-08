@@ -1,9 +1,15 @@
 .header {
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     border-bottom: 1px solid #ECECEC;
+    background-color: #ffffff;
+    z-index: 999;
 }
 
 .header .container {
+    position: relative;
     max-width: 767px;
 
     @media screen and (min-width: 768px) {
@@ -14,3 +20,4 @@
 @import './my-logo';
 @import './header-nav';
 @import './contacts-list';
+@import './main-social-list';

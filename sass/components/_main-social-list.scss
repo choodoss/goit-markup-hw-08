@@ -1,0 +1,35 @@
+.main-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 48px;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.main-social-list__item {
+    &:not(:last-child) {
+        &::after {
+            content: '';
+            border-style: solid;
+            border-color: rgba(33, 33, 33, 0.2);
+            border-width: 1px;
+            transform: rotate(90deg);
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.main-social__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $primary-color-hover;
+
+}
