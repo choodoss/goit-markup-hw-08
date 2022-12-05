@@ -8,8 +8,8 @@
     overflow-y: auto;
     transform: scaleX(1);
     background-color: rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
-
+    overflow: scroll;
+    z-index: 101;
     transition: $transition-opacity, $transition-transform;
 }
 
@@ -20,6 +20,7 @@
 }
 
 .modal__body {
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,11 +34,12 @@
     border-radius: 4px;
 
     @media screen and (min-width: 1170px) {
-        width: 528px;
+        max-width: 528px;
+        top: 50%;
     }
 
     @media screen and (max-width: 479px) {
-        width: 290px;
+        min-width: 290px;
         padding: 30px;
     }
 }
