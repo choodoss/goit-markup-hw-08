@@ -11,7 +11,6 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Web Studio</title>
 </head>
@@ -128,20 +127,42 @@
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="work-img-list__row">
                     <li class="work-img-list__item">
-                        <div class="work-img-list__item-bg"><img class="work-img__img" src="./img/box_1.jpg" width="370"
-                                alt="робота за кодом">
+                        <div class="work-img-list__item-bg">
+                            <picture>
+                                <source
+                                    srcset="./img/team/webp/box_1_1x.webp 1x, ./img/team/webp/box_1_2x.webp 2x, ./img/team/webp/box_1_3x.webp 3x"
+                                    type="image/webp">
+                                <img class="team-list__img"
+                                    srcset="./img/team/jpg/box_1_1x.jpg 1x, ./img/team/jpg/box_1_2x.jpg 2x, ./img/team/jpg/box_1_3x.jpg 3x"
+                                    src="./img/team/jpg/box_1_1x.jpg" width="370" alt="робота за кодом">
+                            </picture>
                             <p class="item-bg__text">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="work-img-list__item">
-                        <div class="work-img-list__item-bg"><img class="work-img__img" src="./img/box_2.jpg" width="370"
-                                alt="адаптація сторінки для телефонів">
+                        <div class="work-img-list__item-bg">
+                            <picture>
+                                <source
+                                    srcset="./img/team/webp/box_2_1x.webp 1x, ./img/team/webp/box_2_2x.webp 2x, ./img/team/webp/box_2_3x.webp 3x"
+                                    type="image/webp">
+                                <img class="team-list__img"
+                                    srcset="./img/team/jpg/box_2_1x.jpg 1x, ./img/team/jpg/box_2_2x.jpg 2x, ./img/team/jpg/box_2_3x.jpg 3x"
+                                    src="./img/team/jpg/box_2_1x.jpg" width="370"
+                                    alt="адаптація сторінки для телефонів">
+                            </picture>
                             <p class="item-bg__text">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="work-img-list__item">
-                        <div class="work-img-list__item-bg"><img class="work-img__img" src="./img/box_3.jpg" width="370"
-                                alt="вибір найкращого кольору">
+                        <div class="work-img-list__item-bg">
+                            <picture>
+                                <source
+                                    srcset="./img/team/webp/box_3_1x.webp 1x, ./img/team/webp/box_3_2x.webp 2x, ./img/team/webp/box_3_3x.webp 3x"
+                                    type="image/webp">
+                                <img class="team-list__img"
+                                    srcset="./img/team/jpg/box_3_1x.jpg 1x, ./img/team/jpg/box_3_2x.jpg 2x, ./img/team/jpg/box_3_3x.jpg 3x"
+                                    src="./img/team/jpg/box_3_1x.jpg" width="370" alt="вибір найкращого кольору">
+                            </picture>
                             <p class="item-bg__text">Дизайнерські рішення</p>
                         </div>
                     </li>
@@ -153,8 +174,28 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team__item">
-                        <img class="team-list__img" src="./img/Igor_Demyanenko.jpg" width="480"
-                            alt="фото Ігоря Дем'яненко">
+                        <picture>
+                            <source
+                                srcset="./img/team/webp/Igor_Demyanenko_1x_270w.webp 1x, ./img/team/webp/Igor_Demyanenko_2x_270w.webp 2x, ./img/team/webp/Igor_Demyanenko_3x_270w.webp 3x"
+                                type="image/webp" media="(min-width: 1170px)">
+                                <source
+                                srcset="./img/team/jpg/Igor_Demyanenko_1x_270w.jpg 1x, ./img/team/jpg/Igor_Demyanenko_2x_270w.jpg 2x, ./img/team/jpg/Igor_Demyanenko_3x_270w.jpg 3x"
+                                type="image/jpg" media="(min-width: 1170px)">
+                            <source
+                                srcset="./img/team/webp/Igor_Demyanenko_1x_354w.webp 1x, ./img/team/webp/Igor_Demyanenko_2x_354w.webp 2x, ./img/team/webp/Igor_Demyanenko_3x_354w.webp 3x"
+                                type="image/webp" media="(min-width: 768px)">
+                                <source
+                                srcset="./img/team/jpg/Igor_Demyanenko_1x_354w.jpg 1x, ./img/team/jpg/Igor_Demyanenko_2x_354w.jpg 2x, ./img/team/jpg/Igor_Demyanenko_3x_354w.jpg 3x"
+                                type="image/jpg" media="(min-width: 768px)">
+                            <source
+                                srcset="./img/team/webp/Igor_Demyanenko_1x_450w.webp 1x, ./img/team/webp/Igor_Demyanenko_2x_450w.webp 2x, ./img/team/webp/Igor_Demyanenko_3x_450w.webp 3x"
+                                type="image/webp">
+                            <source
+                                srcset="./img/team/jpg/Igor_Demyanenko_1x_450w.jpg 1x, ./img/team/jpg/Igor_Demyanenko_2x_450w.jpg 2x, ./img/team/jpg/Igor_Demyanenko_3x_450w.jpg 3x"
+                                type="image/jpg">
+                            <img class="team-list__img" src="./img/team/jpg/Igor_Demyanenko_1x_450w.jpg" width="450"
+                                alt="фото Ігоря Дем'яненко">
+                        </picture>
                         <div class="team__body">
                             <h3 class="team__title">Ігор Дем'яненко</h3>
                             <p lang="en" class="team__job-title">Product Designer</p>
@@ -179,7 +220,28 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team-list__img" src="./img/Olga_Repina.jpg" width="480" alt="фото Ольги Рєпіной">
+                        <picture>
+                            <source
+                                srcset="./img/team/webp/Olga_Repina_1x_270w.webp 1x, ./img/team/webp/Olga_Repina_2x_270w.webp 2x, ./img/team/webp/Olga_Repina_3x_270w.webp 3x"
+                                type="image/webp" media="(min-width: 1170px)">
+                                <source
+                                srcset="./img/team/jpg/Olga_Repina_1x_270w.jpg 1x, ./img/team/jpg/Olga_Repina_2x_270w.jpg 2x, ./img/team/jpg/Olga_Repina_3x_270w.jpg 3x"
+                                type="image/jpg" media="(min-width: 1170px)">
+                            <source
+                                srcset="./img/team/webp/Olga_Repina_1x_354w.webp 1x, ./img/team/webp/Olga_Repina_2x_354w.webp 2x, ./img/team/webp/Olga_Repina_3x_354w.webp 3x"
+                                type="image/webp" media="(min-width: 768px)">
+                                <source
+                                srcset="./img/team/jpg/Olga_Repina_1x_354w.jpg 1x, ./img/team/jpg/Olga_Repina_2x_354w.jpg 2x, ./img/team/jpg/Olga_Repina_3x_354w.jpg 3x"
+                                type="image/jpg" media="(min-width: 768px)">
+                            <source
+                                srcset="./img/team/webp/Olga_Repina_1x_450w.webp 1x, ./img/team/webp/Olga_Repina_2x_450w.webp 2x, ./img/team/webp/Olga_Repina_3x_450w.webp 3x"
+                                type="image/webp">
+                            <source
+                                srcset="./img/team/jpg/Olga_Repina_1x_450w.jpg 1x, ./img/team/jpg/Olga_Repina_2x_450w.jpg 2x, ./img/team/jpg/Olga_Repina_3x_450w.jpg 3x"
+                                type="image/jpg">
+                            <img class="team-list__img" src="./img/team/jpg/Olga_Repina_1x_450w.jpg" width="450"
+                                alt="фото Ольги Рєпіной">
+                        </picture>
                         <div class="team__body">
                             <h3 class="team__title">Ольга Рєпіна</h3>
                             <p lang="en" class="team__job-title">Frontend Developer</p>
@@ -204,8 +266,28 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team-list__img" src="./img/Mikola_Tarasov.jpg" width="480"
-                            alt="фото Миколи Тарасова">
+                        <picture>
+                            <source
+                                srcset="./img/team/webp/Mikola_Tarasov_1x_270w.webp 1x, ./img/team/webp/Mikola_Tarasov_2x_270w.webp 2x, ./img/team/webp/Mikola_Tarasov_3x_270w.webp 3x"
+                                type="image/webp" media="(min-width: 1170px)">
+                                <source
+                                srcset="./img/team/jpg/Mikola_Tarasov_1x_270w.jpg 1x, ./img/team/jpg/Mikola_Tarasov_2x_270w.jpg 2x, ./img/team/jpg/Mikola_Tarasov_3x_270w.jpg 3x"
+                                type="image/jpg" media="(min-width: 1170px)">
+                            <source
+                                srcset="./img/team/webp/Mikola_Tarasov_1x_354w.webp 1x, ./img/team/webp/Mikola_Tarasov_2x_354w.webp 2x, ./img/team/webp/Mikola_Tarasov_3x_354w.webp 3x"
+                                type="image/webp" media="(min-width: 768px)">
+                                <source
+                                srcset="./img/team/jpg/Mikola_Tarasov_1x_354w.jpg 1x, ./img/team/jpg/Mikola_Tarasov_2x_354w.jpg 2x, ./img/team/jpg/Mikola_Tarasov_3x_354w.jpg 3x"
+                                type="image/jpg" media="(min-width: 768px)">
+                            <source
+                                srcset="./img/team/webp/Mikola_Tarasov_1x_450w.webp 1x, ./img/team/webp/Mikola_Tarasov_2x_450w.webp 2x, ./img/team/webp/Mikola_Tarasov_3x_450w.webp 3x"
+                                type="image/webp">
+                            <source
+                                srcset="./img/team/jpg/Mikola_Tarasov_1x_450w.jpg 1x, ./img/team/jpg/Mikola_Tarasov_2x_450w.jpg 2x, ./img/team/jpg/Mikola_Tarasov_3x_450w.jpg 3x"
+                                type="image/jpg">
+                            <img class="team-list__img" src="./img/team/jpg/Mikola_Tarasov_1x_450w.jpg" width="450"
+                                alt="фото Миколи Тарасова">
+                        </picture>
                         <div class="team__body">
                             <h3 class="team__title">Микола Тарасов</h3>
                             <p lang="en" class="team__job-title">Marketing</p>
@@ -230,8 +312,28 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team-list__img" src="./img/Mikhailo_Yermakov.jpg" width="480"
-                            alt="фото Михайла Єрмакова">
+                        <picture>
+                            <source
+                                srcset="./img/team/webp/Mikhailo_Yermakov_1x_270w.webp 1x, ./img/team/webp/Mikhailo_Yermakov_2x_270w.webp 2x, ./img/team/webp/Mikhailo_Yermakov_3x_270w.webp 3x"
+                                type="image/webp" media="(min-width: 1170px)">
+                                <source
+                                srcset="./img/team/jpg/Mikhailo_Yermakov_1x_270w.jpg 1x, ./img/team/jpg/Mikhailo_Yermakov_2x_270w.jpg 2x, ./img/team/jpg/Mikhailo_Yermakov_3x_270w.jpg 3x"
+                                type="image/jpg" media="(min-width: 1170px)">
+                            <source
+                                srcset="./img/team/webp/Mikhailo_Yermakov_1x_354w.webp 1x, ./img/team/webp/Mikhailo_Yermakov_2x_354w.webp 2x, ./img/team/webp/Mikhailo_Yermakov_3x_354w.webp 3x"
+                                type="image/webp" media="(min-width: 768px)">
+                                <source
+                                srcset="./img/team/jpg/Mikhailo_Yermakov_1x_354w.jpg 1x, ./img/team/jpg/Mikhailo_Yermakov_2x_354w.jpg 2x, ./img/team/jpg/Mikhailo_Yermakov_3x_354w.jpg 3x"
+                                type="image/jpg" media="(min-width: 768px)">
+                            <source
+                                srcset="./img/team/webp/Mikhailo_Yermakov_1x_450w.webp 1x, ./img/team/webp/Mikhailo_Yermakov_2x_450w.webp 2x, ./img/team/webp/Mikhailo_Yermakov_3x_450w.webp 3x"
+                                type="image/webp">
+                            <source
+                                srcset="./img/team/jpg/Mikhailo_Yermakov_1x_450w.jpg 1x, ./img/team/jpg/Mikhailo_Yermakov_2x_450w.jpg 2x, ./img/team/jpg/Mikhailo_Yermakov_3x_450w.jpg 3x"
+                                type="image/jpg">
+                            <img class="team-list__img" src="./img/team/jpg/Mikhailo_Yermakov_1x_450w.jpg" width="450"
+                                alt="фото Михайла Єрмакова">
+                        </picture>
                         <div class="team__body">
                             <h3 class="team__title">Михайло Єрмаков</h3>
                             <p lang="en" class="team__job-title">UI Designer</p>
@@ -418,12 +520,9 @@
     <script src="./js/modal.js">
     </script>
     <script src="./js/mob-menu.js"></script>
-    <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
