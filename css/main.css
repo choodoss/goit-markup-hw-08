@@ -248,7 +248,6 @@ img {
 }
 
 .drop-menu {
-  margin-top: 61px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -260,7 +259,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  top: 100%;
+  top: 61px;
   width: 100vw;
   height: 100vh;
   left: 0;
@@ -268,16 +267,16 @@ img {
   padding-bottom: 48px;
   background-color: #ffffff;
   z-index: 101;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .drop-menu.is-open {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 @media screen and (min-width: 768px) {
   .drop-menu {
