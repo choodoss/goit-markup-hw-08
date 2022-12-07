@@ -31,5 +31,10 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $primary-color-hover;
+    transition: $transition-color;
 
+    &:hover,
+    &:focus {
+        color: $primary-link-color;
+    }
 }

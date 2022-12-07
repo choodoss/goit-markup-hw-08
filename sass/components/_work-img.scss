@@ -1,8 +1,9 @@
 .work-img {
-    padding-top: 0;
     display: none;
-    @media screen and (min-width: 1170px){
+
+    @media screen and (min-width: 1170px) {
         display: block;
+        padding-top: 0;
     }
 }
 
