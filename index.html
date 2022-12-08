@@ -12,7 +12,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+        <link rel="stylesheet" href="./css/main.min.css">
     <title>Web Studio</title>
 </head>
 
@@ -36,7 +36,7 @@
                         <li class="main-nav__item"><a class="main-nav__title" href="./portfolio.html">Портфоліо</a></li>
                         <li class="main-nav__item"><a class="main-nav__title" href="#">Контакти</a></li>
                     </ul>
-                    <ul class="contacts-list  animate__animated animate__backInRight">
+                    <ul class="contacts-list animate__animated animate__backInRight">
                         <li class="contacts-list__item"><a class="phone" href="tel:+380961111111"><svg width="10"
                                     height="16" class="phone__icon">
                                     <use href="./img/icons.svg#icon-smartphone"></use>
@@ -524,6 +524,22 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js"></script>
+    <script> var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          },
+          scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+      );
+      wow.init();"</script>
 </body>
 
 </html>
