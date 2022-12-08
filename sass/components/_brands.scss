@@ -11,7 +11,7 @@
         @include basis (2, 3);
     }
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         @include basis (5, 6);
     }
 }
