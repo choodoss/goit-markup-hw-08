@@ -47,7 +47,7 @@
         transform: scaleY(0);
     }
 
-    &.replacement {
+    &.js-close-menu {
         .cross__icon {
             transform: scaleY(1);
         }
@@ -84,6 +84,7 @@
     background-color: #ffffff;
     z-index: 101;
     pointer-events: none;
+    overflow: auto;
 
     transform: translateY(100%);
     transition: transform 500ms cubic - bezier(0.4, 0, 0.2, 1);

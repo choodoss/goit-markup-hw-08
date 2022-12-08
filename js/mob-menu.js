@@ -8,7 +8,7 @@
             openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
         openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
         openDropMenu.classList.toggle('is-open');
-        openMenuBtn.classList.toggle('replacement');
+        openMenuBtn.classList.toggle('js-close-menu');
 
         const scrollLockMethod = !isMenuOpen
             ? 'disableBodyScroll'
@@ -23,7 +23,6 @@
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
         if (!e.matches) return;
         openDropMenu.classList.remove('is-open');
-        openMenuBtn.classList.remove('replacement');
         openMenuBtn.setAttribute('aria-expanded', false);
         bodyScrollLock.enableBodyScroll(document.body);
     });

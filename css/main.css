@@ -222,11 +222,11 @@ img {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
 }
-.header-nav__button.replacement .cross__icon {
+.header-nav__button.js-close-menu .cross__icon {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
-.header-nav__button.replacement .menu__icon {
+.header-nav__button.js-close-menu .menu__icon {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
 }
@@ -268,6 +268,7 @@ img {
   background-color: #ffffff;
   z-index: 101;
   pointer-events: none;
+  overflow: auto;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
