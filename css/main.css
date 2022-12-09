@@ -297,6 +297,7 @@ img {
     padding: 0;
     margin: 0;
     height: 60px;
+    overflow: hidden;
     background-color: transparent;
     pointer-events: all;
     -webkit-transform: translateY(0%);
