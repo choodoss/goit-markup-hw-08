@@ -19,5 +19,40 @@
     }
 }
 
+.contacts-list__item {
+    & .email {
+        padding-bottom: 15px;
+    }
+
+    & .phone {
+        padding-top: 15px;
+
+    }
+
+    @media screen and (min-width:768px) {
+        & .email {
+            padding-top: 20px;
+            padding-bottom: 0;
+        }
+
+        & .phone {
+            padding-bottom: 20px;
+            padding-top:0;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        & .email {
+            padding: 32px 0;
+        }
+
+        & .phone {
+            padding: 32px 0;
+
+        }
+    }
+
+}
+
 @import './email';
 @import './phone';

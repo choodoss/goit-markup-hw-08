@@ -10,9 +10,9 @@
 
 .header .container {
     position: relative;
-    max-width: 767px;
+    max-width: 768px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         max-width: 1200px;
     }
 }
