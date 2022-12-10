@@ -12,7 +12,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Web Studio</title>
 </head>
 
@@ -20,7 +20,8 @@
     <header class="header">
         <div class="container">
             <nav class="header-nav">
-                <a class="my-logo animate__animated animate__backInLeft" href="./"><span class="my-logo--blue">Web</span>Studio</a>
+                <a class="my-logo animate__animated animate__backInLeft" href="./"><span
+                        class="my-logo--blue">Web</span>Studio</a>
                 <button class="header-nav__button 
                 js-open-menu" aria-expanded="false" type="button">
                     <svg class="header-nav__svg" width="40" height="40" aria-label="Мобільне меню">
@@ -518,28 +519,16 @@
             </div>
         </div>
     </footer>
-    <script src="./js/modal.js">
+    <script src="./js/modal.js" type="module">
     </script>
-    <script src="./js/mob-menu.js"></script>
+    <script src="./js/mob-menu.js" type="module"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script src="./js/wow.min.js"></script>
     <script> var wow = new WOW(
-        {
-          boxClass:     'wow',      // animated element css class (default is wow)
-          animateClass: 'animated', // animation css class (default is animated)
-          offset:       0,          // distance to the element when triggering the animation (default is 0)
-          mobile:       true,       // trigger animations on mobile devices (default is true)
-          live:         true,       // act on asynchronously loaded content (default is true)
-          callback:     function(box) {
-            // the callback is fired every time an animation is started
-            // the argument that is passed in is the DOM node being animated
-          },
-          scrollContainer: null // optional scroll container selector, otherwise use window
-        }
-      );
-      wow.init();"</script>
+        );
+        wow.init(); "</script>
 </body>
 
 </html>
